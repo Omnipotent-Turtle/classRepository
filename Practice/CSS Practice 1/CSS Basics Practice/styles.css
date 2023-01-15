@@ -1,0 +1,22 @@
+body{
+    background-color:rgb(60, 138, 100);
+}
+
+h1 {
+    color: goldenrod;
+}
+
+div{
+    background-color: cornflowerblue;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+}
+
+.shadow-text{
+    text-shadow: gray 1px 1px;
+}
+
+#large-paragraph{
+    font-size: 30px;
+}

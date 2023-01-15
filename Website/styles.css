@@ -1,0 +1,32 @@
+#headerStyle{
+    background-color: honeydew;
+}
+div{
+    width: 100px;
+    height: 100px;
+}
+
+table, td, th{
+    border: 1px solid black;
+}
+
+#borderSeparate{
+    border-collapse: separate;
+}
+
+.newanchor:link{
+    color:pink;
+}
+
+.newanchor:visited{color:greenyellow;}
+
+.newanchor:hover{
+    color: wheat;
+}
+
+body{
+    background-color: cornflowerblue;
+}
+
+
+
