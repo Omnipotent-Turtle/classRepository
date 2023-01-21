@@ -1,4 +1,8 @@
 
+
+
+/*Below is a failed Intermediate Array Assignment. Above will be a corrected version for reference.
+
 const customers = [
   {
       name: 'Sam',
@@ -35,4 +39,4 @@ const newCustomers = customers.filter((whatever) => {
 
 });
 
-console.log(newCustomers);
+console.log(newCustomers); */

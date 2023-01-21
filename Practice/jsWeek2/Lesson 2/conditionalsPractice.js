@@ -1,6 +1,6 @@
 var firstName = "bran";
 
-if (firstName == "brand")
+if (firstName == "bran")
 {
     console.log("I love Sabbys");
 }
@@ -29,10 +29,8 @@ switch (grade)
 var a = 5;
 var b = 6;
 
-if (a !== b)
+if (a !== b && b == 6)
 {
-    if (b == 6)
-    {
-        console.log("a is 5 and b is 6");
-    }
+        console.log("a is not equal to 6, but b is equal to 6.");
+    
 }
