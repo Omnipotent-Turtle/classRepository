@@ -98,6 +98,7 @@ class Menu{
     viewTeam(){
         let index = prompt('Enter the index of the team you wish to view:');
         if (index > -1 && index < this.teams.length){
+          
           this.selectedTeam = this.teams[index];
 
           let description = 'Team Name: ' + this.selectedTeam.name + '\n';
