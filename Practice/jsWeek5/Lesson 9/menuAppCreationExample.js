@@ -83,6 +83,7 @@ class Menu{
 
     createTeam(){
         let name = prompt('Enter name for new team:');
+        
         this.teams.push(new Team(name));
 
     }
