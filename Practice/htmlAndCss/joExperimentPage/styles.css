@@ -1,0 +1,35 @@
+.hov {
+    text-decoration-color: thistle;
+}
+
+.hov:hover{
+    color: crimson;
+}
+
+h1 {
+    color: goldenrod;
+}
+
+h2 {
+    color: goldenrod;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+.shadowtext{
+    text-shadow: gray 1px 1px;
+}
+
+#largeparagraph {
+    font-size: 30px;
+}
+
+#box-model {
+    padding: 20px;
+    border-style: solid;
+    border-width: 3px;
+    margin: 30px;
+    background-color: cadetblue;
+}
