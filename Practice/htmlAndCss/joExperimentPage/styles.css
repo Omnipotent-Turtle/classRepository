@@ -33,3 +33,7 @@ body{
     margin: 30px;
     background-color: cadetblue;
 }
+
+#float-right{
+    float: right;
+}
