@@ -42,16 +42,19 @@ function getValue(id) {
 }
 
 function drawDOM() {
+    console.log("drawing DOM...");
  let teamDiv = document.getElementById('teams');
  clearElement(teamDiv); 
-  for(team of teams) {
+  for(let team of teams) {
+    console.log("team: ", team);
     let table = createTeamTable(team);
+    console.log(table);
     let title = document.createElement('h2');
     title.innerHTML = team.name;
     title.appendChild(createDeleteTeamButton(team));
     teamDiv.appendChild(title);
     teamDiv.appendChild(table);
-    for (member of team.members) {
+    for (let member of team.members) {
         createMemberRow(team, table, member);
     }
   }
@@ -66,14 +69,15 @@ actions.appendChild(createDeleteRowButton(team, member));
 }
 
 function createDeleteRowButton(team, member){
-    let button = document.createElement('button');
+    let btn = document.createElement('button');
     btn.className = 'btn btn-primary'
     btn.innerHTML = 'Delete';
-    btn.onClick = () => {
+    btn.onclick = () => {
     let index = team.members.indexOf(member);
     team.members.splice(index, 1);
     drawDOM();
     };
+    return btn;
 }
 
 function createDeleteTeamButton(team) {
@@ -85,20 +89,20 @@ function createDeleteTeamButton(team) {
         teams.splice(index, 1);
         drawDOM();
     };
+    return btn; //returns the delete button element
 }
 
 function clearElement(element){
 while(element.firstChild){
-    element.removeChild(element.firstChild);
-}
+    element.removeChild(element.firstChild);}
 }
 
-function createNewMemberButton(team){
+function createNewMemberButton(team){ 
     let btn = document.createElement('button')
     btn.className = 'btn btn-primary';
     btn.innerHTML = 'Create';
     btn.onClick = () => {
-        team.members.push(new Member(getValue(`name-input-${team.id}`), getValue(`position-input-${team.id}`)))
+        team.members.push(new Member(getValue(`name-input-${team.id}`), getValue(`position-input-${team.id}`)));
         drawDOM();
     };
     return btn;
